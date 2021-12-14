@@ -21,7 +21,7 @@ def to_excel(df):
     processed_data = output.getvalue()
     return processed_data         
 
-uploaded_file = st.file_uploader(“Choose your Excel file”,type=['xlsx'],accept_multiple_files=False)
+uploaded_file = st.file_uploader("Choose your Excel file”,type=['xlsx'],accept_multiple_files=False)
 if uploaded_file is not None:
   #read excel
   df=pd.read_excel(uploaded_file)
