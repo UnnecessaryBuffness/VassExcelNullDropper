@@ -22,7 +22,7 @@ def to_excel(df):
     return processed_data         
 
 uploaded_file = st.file_uploader("Choose your Excel file",type=['xlsx'],accept_multiple_files=False)
-    if uploaded_file is not None:
+if uploaded_file is not None:
       #read excel
       df=pd.read_excel(uploaded_file)
 
