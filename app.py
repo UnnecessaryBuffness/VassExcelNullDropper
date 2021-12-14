@@ -22,15 +22,15 @@ def to_excel(df):
     return processed_data         
 
 uploaded_file = st.file_uploader("Choose your Excel file",type=['xlsx'],accept_multiple_files=False)
-if uploaded_file is not None:
-  #read excel
-  df=pd.read_excel(uploaded_file)
+    if uploaded_file is not None:
+      #read excel
+      df=pd.read_excel(uploaded_file)
 
 
-df_xlsx = to_excel(df)
-st.download_button(label='📥 Download ',
-                                data=df_xlsx ,
-                                file_name= f'{uploaded_file.name}')
+    df_xlsx = to_excel(df)
+    st.download_button(label='📥 Download ',
+                                    data=df_xlsx ,
+                                    file_name= f'{uploaded_file.name}')
 
 
 
