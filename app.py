@@ -5,7 +5,7 @@ from pyxlsb import open_workbook as open_xlsb
 import streamlit as st
 
 
-st.title('Vass's Excel Null Dropper')
+st.title("Vass's Excel Null Dropper")
 #st.markdown("_Let's get educated brother_")
 st.markdown("_Drops entirely blank columns from Excel files_")
 
