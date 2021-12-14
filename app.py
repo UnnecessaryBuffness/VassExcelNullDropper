@@ -25,6 +25,9 @@ uploaded_file = st.file_uploader("Choose your Excel file",type=['xlsx'],accept_m
 if uploaded_file is not None:
     #read excel
     df=pd.read_excel(uploaded_file)
+    
+    #drop null columns
+    df = df.dropna()
 
 
     df_xlsx = to_excel(df)
