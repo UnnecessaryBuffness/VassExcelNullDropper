@@ -4,10 +4,10 @@ from io import BytesIO
 from pyxlsb import open_workbook as open_xlsb
 import streamlit as st
 
-st.image('https://pbs.twimg.com/profile_images/1360296036498087937/CCh-b8wJ_400x400.jpg')
 st.title("Vass's Excel Null Dropper")
 #st.markdown("_Let's get educated brother_")
 st.markdown("_Drops entirely blank columns from Excel files_")
+st.image('https://pbs.twimg.com/profile_images/1360296036498087937/CCh-b8wJ_400x400.jpg')
 
 def to_excel(df):
     output = BytesIO()
