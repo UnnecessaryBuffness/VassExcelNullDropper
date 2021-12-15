@@ -27,7 +27,7 @@ if uploaded_file is not None:
     df=pd.read_excel(uploaded_file)
     
     #drop null columns
-    df = df.dropna()
+    df = df.dropna(axis=0,)
 
 
     df_xlsx = to_excel(df)
